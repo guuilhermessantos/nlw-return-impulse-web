@@ -33,7 +33,7 @@ A aplicação consiste num widget que possibilita o envio de feedbacks além de 
 
 **1.** Clone este repositório com o seguinte comando:
 
-`git clone git@github.com:Kamila-Vieira/FeedBack-widget.git`
+`git clone https://github.com/guuilhermessantos/nlw-return-impulse-full.git`
 
 **2.** Você vai precisar ter o **Node.js** e o **Expo** instalados na sua máquina.
 
@@ -64,4 +64,4 @@ A aplicação consiste num widget que possibilita o envio de feedbacks além de 
 Em seguida, digitalize o código QR com o aplicativo Expo (Android) ou o aplicativo Câmera (iOS).
 
 **Isto é tudo! :heart:<br />
-Se você tiver dúvidas sobre o Feedget, você pode perguntar no [GitHub Issues](https://github.com/Kamila-Vieira/FeedBack-widget/issues).**
+Se você tiver dúvidas sobre o Feedget, você pode perguntar no [GitHub Issues](https://github.com/guuilhermessantos/nlw-return-impulse-full/issues).**
