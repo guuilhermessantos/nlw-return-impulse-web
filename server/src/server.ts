@@ -6,7 +6,7 @@ import cors from 'cors'
 
 const app = express() 
 console.log(process.env.PORT)
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3333;
 
 app.use(cors())
 app.use(express.json());
