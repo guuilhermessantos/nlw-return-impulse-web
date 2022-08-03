@@ -3,9 +3,9 @@ import nodemailer from 'nodemailer'
 import { routes } from './routes';
 import cors from 'cors'
 
-const PORT = process.env.PORT || 3333;
 
 const app = express() 
+const PORT = process.env.PORT || 3333;
 
 app.use(cors())
 app.use(express.json());
