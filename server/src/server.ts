@@ -12,5 +12,5 @@ app.use(express.json());
 app.use(routes);
 
 app.listen(PORT, () => {
-    console.log('HTTP server running! 🎢')
+    console.log(`HTTP server running! 🎢 ${PORT}`)
 })
