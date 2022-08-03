@@ -1,10 +1,11 @@
 import { ArrowLeft, Camera } from "phosphor-react";
 import { FormEvent, useState } from "react";
-import { FeedbackType, feedBackTypes } from "..";
+import { FeedbackType } from "..";
 import { api } from "../../../lib/api";
 import { CloseButton } from "../../CloseButton"
 import { Loading } from "../../Loading";
 import { ScreenshotButton } from "../ScreenshotButton";
+import { FEEDBACK_TYPES } from "../../../mocks/index";
 
 interface FeedbackContentStepProps {
 	feedbackType: FeedbackType;
@@ -25,7 +26,7 @@ export function FeedbackContentStep({
 	const [isSendingFeedback, setIsSendingFeedback] = useState(false)
 
 
-	const feedbackTypeInfo = feedBackTypes[feedbackType]
+	const feedbackTypeInfo = FEEDBACK_TYPES[feedbackType]
 
 	async function handleSubmitFeedback(event: FormEvent) {
 		event.preventDefault();
@@ -54,7 +55,7 @@ export function FeedbackContentStep({
 				</button>
 
 				<span className="text-xl leading-6 flex items-center gap-2">
-					<img src={feedbackTypeInfo.image.source} alt={feedbackTypeInfo.image.alt} className="w6 h-6"/>
+					<img src={feedbackTypeInfo.image.src} alt={feedbackTypeInfo.image.alt} className="w6 h-6"/>
 					{feedbackTypeInfo.title}
 				</span>
 				<CloseButton />

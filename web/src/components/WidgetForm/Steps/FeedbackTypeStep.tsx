@@ -1,5 +1,6 @@
-import { FeedbackType, feedBackTypes } from ".."
+import { FeedbackType } from ".."
 import { CloseButton } from "../../CloseButton";
+import { FEEDBACK_TYPES } from "../../../mocks/index";
 
 interface FeedbackTypeStepProps {
    onFeedbackTypeChanged: (type: FeedbackType) => void;
@@ -13,7 +14,7 @@ export function FeedbackTypeStep({onFeedbackTypeChanged}: FeedbackTypeStepProps)
             <CloseButton />
          </header>
       <div className="flex py-8 gap-2 w-full">
-      { Object.entries(feedBackTypes).map(([key, value]) => {
+      { Object.entries(FEEDBACK_TYPES).map(([key, value]) => {
          return (
             <button
                key={key}
@@ -22,7 +23,7 @@ export function FeedbackTypeStep({onFeedbackTypeChanged}: FeedbackTypeStepProps)
                type="button"
             >
             <img 
-               src={value.image.source}  
+               src={value.image.src}  
                alt={value.image.alt}
             />
             <span>{value.title}</span>
