@@ -5,13 +5,11 @@ import cors from 'cors'
 
 
 const app = express() 
-console.log(process.env.PORT)
-const PORTA = process.env.PORT || 3333;
 
 app.use(cors())
 app.use(express.json());
 app.use(routes);
 
-app.listen(PORTA, () => {
-    console.log(`HTTP server running! 🎢 ${PORTA}`)
+app.listen(process.env.PORT, () => {
+    console.log(`HTTP server running! 🎢`)
 })
